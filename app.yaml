@@ -7,3 +7,11 @@ handlers:
 
 - url: /index\.html
   script: index.php
+
+error_handlers:
+  - file: default_error.html
+
+  - error_code: over_quota
+    file: over_quota.html  
+
+default_expiration: "15M"    
